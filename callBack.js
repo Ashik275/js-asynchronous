@@ -1,3 +1,9 @@
+/* Callback function invocation:
+The enroll function is called first with an anonymous function as an argument.
+Inside this anonymous function, progress is called with getCertificate as its argument.
+So, getCertificate becomes the callback function for progress.
+The execution flow is such that once enrollment is successful, it checks the progress. If the progress is satisfactory, it proceeds to get the certificate. */
+
 const paymentSuccess = true;
 const marks = 70;
 
